@@ -11,11 +11,13 @@ const cors = require("cors");
 dataDB();
 
 app.use(
-  cors({
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "DELETE"],
-    credentials: true,
-  })
+  cors(
+  //   {
+  //   origin: "http://localhost:5173",
+  //   methods: ["GET", "POST", "DELETE"],
+  //   credentials: true,
+  // }
+)
 );
 app.use(express.urlencoded({ extended: true }));
 
